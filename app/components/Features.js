@@ -60,7 +60,7 @@ export const Features = () => {
       bgSize="cover"
       bgPosition="center"
       position="relative"
-      h="1307px"
+      h="1207px"
       w="full"
       px="90px"
       pt="122px"
@@ -93,7 +93,7 @@ export const Features = () => {
         fontWeight="bold"
         mt="50px"
         px="170px"
-        pt="150px"
+        pt="50px"
       >
         <HStack spacing="200px">
           <FeatureCard title="DIB" icon={<Dib />}>
