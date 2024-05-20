@@ -3,6 +3,7 @@
 import { About } from "./components/About";
 import { Features } from "./components/Features";
 import HeaderSection from "./components/HeaderSection";
+import { Opportunities } from "./components/Opportunities";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeaderSection />
       <About />
       <Features />
+      <Opportunities/>
     </main>
   );
 }

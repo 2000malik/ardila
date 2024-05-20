@@ -7,5 +7,6 @@ export const colors = {
   primaryRed:"#E8356D",
   gray:"#F3F4F6",
   white:"#FFFFFF",
-  lightWhite:"#FEFCE8"
+  lightWhite:"#FEFCE8",
+  purple:"#43027E"
 };

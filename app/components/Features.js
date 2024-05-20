@@ -8,13 +8,14 @@ function FeatureCard(props) {
   const { title, icon, children, ...rest } = props;
   return (
     <Box
-      w="45%"
-      //   minH="200px"
-      h="400px"
+      w="40%"
+      minH="300px"
+      maxH="400px"
       pt="32px"
       pr="50px"
       pb="32px"
       pl="24px"
+      _hover={{ bg: "purple", cursor: "pointer", borderRadius: "24px" }}
       {...rest}
     >
       <VStack align="start" spacing="20px">
@@ -44,6 +45,7 @@ function FeatureButton(props) {
       px="20px"
       fontSize="16px"
       fontWeight={500}
+      //  #17012A .
       {...rest}
     >
       {children}
@@ -61,6 +63,7 @@ export const Features = () => {
       bgPosition="center"
       position="relative"
       h="1207px"
+      maxH="1407px"
       w="full"
       px="90px"
       pt="122px"
@@ -76,7 +79,7 @@ export const Features = () => {
           advantage today?
         </Text>
         <Box>
-          <FeatureButton>
+          <FeatureButton _hover={{ bg: "#3d0270" }}>
             <Text as="span" mr={4}>
               Learn more about savings
             </Text>
