@@ -8,5 +8,8 @@ export const colors = {
   gray:"#F3F4F6",
   white:"#FFFFFF",
   lightWhite:"#FEFCE8",
-  purple:"#43027E"
+  purple:"#43027E",
+  darkPurple:"#3D0072",
+  ardilaTeal:"#0D9488",
+  ardilaCream:"#FFFDF2"
 };

@@ -33,7 +33,7 @@ function FeatureCard(props) {
     </Box>
   );
 }
-function FeatureButton(props) {
+export function FeatureButton(props) {
   const { children, ...rest } = props;
   return (
     <AdrilaButton
