@@ -11,5 +11,6 @@ export const colors = {
   purple:"#43027E",
   darkPurple:"#3D0072",
   ardilaTeal:"#0D9488",
-  ardilaCream:"#FFFDF2"
+  ardilaCream:"#FFFDF2",
+  lightPurple:"#3C0071",
 };
