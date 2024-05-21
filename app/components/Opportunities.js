@@ -1,7 +1,6 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 import { FeatureButton } from "./Features";
 import { ArrowOpportunity, ArrowOutWithPurpleBg } from "./icons";
-import { About } from "./About";
 
 export const Opportunities = () => {
   return (
@@ -40,7 +39,6 @@ export const Opportunities = () => {
         <ArrowOpportunity />
       </Box>
     </Box>
-    <About/>
    </>
   );
 };
