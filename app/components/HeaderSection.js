@@ -40,24 +40,28 @@ const HeaderSection = () => {
       overflow="hidden"
       fontFamily="Cabinet Grotesk"
     >
-      <Flex justify="space-between" as="nav">
+      <Flex as="nav" w="1264px" margin="auto">
         <Box
-          w={"80%"}
+          // w={"80%"}
           bg="lightPrimary"
           border="1px"
           borderColor="#503375"
           borderRadius="1000px"
           px="30px"
           py="8px"
+          height="80px"
+          mr={5}
         >
-          <HStack spacing="160px">
+          <HStack spacing="100px">
             <Box mr="45px">
-              <Image
-                src="/assets/images/LOGO.svg"
-                alt="ardila-logo"
-                width={100}
-                height={100}
-              />
+              <Link href="/">
+                <Image
+                  src="/assets/images/LOGO.svg"
+                  alt="ardila-logo"
+                  width={100}
+                  height={100}
+                />
+              </Link>
             </Box>
             <HStack spacing="40px">
               <Link href="#">
@@ -100,9 +104,8 @@ const HeaderSection = () => {
           borderRadius="1000px"
           borderColor="#503375"
           bg="lightPrimary"
-          p="30px"
           w="10%"
-          height="12px"
+          height="80px"
         >
           <NavLink>Personal</NavLink>
         </AdrilaButton>
@@ -122,7 +125,13 @@ const HeaderSection = () => {
         </Center>
         <Center>
           <Box w="770px">
-            <Text fontSize="15px" fontWeight={500} fontFamily="Cabinet Grotesk" color="white" mt={3}>
+            <Text
+              fontSize="15px"
+              fontWeight={500}
+              fontFamily="Cabinet Grotesk"
+              color="white"
+              mt={3}
+            >
               Ardilla helps you save and invest in achieving your financial
               goals, we have the most flexible and seamless way
             </Text>
