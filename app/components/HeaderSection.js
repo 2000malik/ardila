@@ -45,7 +45,7 @@ const HeaderSection = () => {
           // w={"80%"}
           bg="lightPrimary"
           border="1px"
-          borderColor="#503375"
+          borderColor="#ffffff38"
           borderRadius="1000px"
           px="30px"
           py="8px"
@@ -102,7 +102,7 @@ const HeaderSection = () => {
         <AdrilaButton
           border="1px"
           borderRadius="1000px"
-          borderColor="#503375"
+          borderColor="#ffffff38"
           bg="lightPrimary"
           w="10%"
           height="80px"
