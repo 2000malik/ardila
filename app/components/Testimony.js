@@ -6,7 +6,7 @@ const Testimonies = () => {
   return (
     <Box bg="gray" px="90px" pt="60px" as="section" h="852px" color="purple">
       <VStack align="stretch" spacing="30px">
-        <Heading fontSize="80px" fontWeight={800}>
+        <Heading fontSize="80px" fontWeight={800} fontFamily="Cabinet Grotesk">
           Don’t Take Our{" "}
           <Text as="span" color="primaryRed">
             Word

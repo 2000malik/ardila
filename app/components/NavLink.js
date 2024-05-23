@@ -6,7 +6,12 @@ export const NavLink = (props) => {
   const { children, ...rest } = props;
   return (
     <HStack>
-      <Text fontSize="14px" fontWeight={500} {...rest}>
+      <Text
+        fontSize="14px"
+        fontWeight={500}
+        fontFamily="Cabinet Grotesk"
+        {...rest}
+      >
         {children}
       </Text>
       <ArrowDown />

@@ -4,10 +4,21 @@ import { ArrowOpportunity, ArrowOutWithPurpleBg } from "./icons";
 
 export const Opportunities = () => {
   return (
-   <>
-     <Box as="section" h="602px" bg="ardilaCream" px="90px" pt="60px" overflow="hidden">
+    <Box
+      as="section"
+      h="602px"
+      bg="ardilaCream"
+      px="90px"
+      pt="60px"
+      overflow="hidden"
+    >
       <VStack align="stretch" spacing="50px">
-        <Heading fontSize="80px" fontWeight={800} color="darkPurple">
+        <Heading
+          fontSize="80px"
+          fontWeight={800}
+          fontFamily="Cabinet Grotesk"
+          color="darkPurple"
+        >
           Unlimited{" "}
           <Text as="span" color="ardilaTeal">
             Investment
@@ -39,6 +50,5 @@ export const Opportunities = () => {
         <ArrowOpportunity />
       </Box>
     </Box>
-   </>
   );
 };

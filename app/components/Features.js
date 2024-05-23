@@ -76,10 +76,15 @@ export const Features = () => {
       overflow="hidden"
     >
       <VStack align="stretch" spacing="30px">
-        <Heading fontWeight={800} fontSize="90px" textAlign="left">
+        <Heading
+          fontWeight={800}
+          fontSize="90px"
+          fontFamily="Cabinet Grotesk"
+          textAlign="left"
+        >
           Access More With Your Money
         </Heading>
-        <Text fontWeight={500} fontSize="16px">
+        <Text fontWeight={500} fontSize="16px" fontFamily="Cabinet Grotesk">
           Earn, learn, parlay, and grow financially. With Ardilla, you have more
           opportunities than ever at your finger tips. Why not <br /> take
           advantage today?

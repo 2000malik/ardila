@@ -17,13 +17,10 @@ export function AdrilaButton(props) {
   return (
     <Button
       bg="#F4F2E8"
-      //   borderRadius="35px"
-      //   py="16px"
-      //   px="30px"
       fontSize="15px"
       fontWeight={500}
       cursor="pointer"
-      //   _hover={{ background: "#3976f6", color: "white" }}
+      fontFamily="Cabinet Grotesk"
       {...rest}
     >
       {children}
@@ -41,6 +38,7 @@ const HeaderSection = () => {
       px="90px"
       pt="34px"
       overflow="hidden"
+      fontFamily="Cabinet Grotesk"
     >
       <Flex justify="space-between" as="nav">
         <Box
@@ -112,6 +110,7 @@ const HeaderSection = () => {
       <Box as="section" margin="auto" maxW="1199px" mt="100px">
         <Center>
           <Heading
+            fontFamily="Cabinet Grotesk"
             as="h2"
             fontWeight={800}
             fontSize="95px"
@@ -123,7 +122,7 @@ const HeaderSection = () => {
         </Center>
         <Center>
           <Box w="770px">
-            <Text fontSize="15px" fontWeight={500} color="white" mt={3}>
+            <Text fontSize="15px" fontWeight={500} fontFamily="Cabinet Grotesk" color="white" mt={3}>
               Ardilla helps you save and invest in achieving your financial
               goals, we have the most flexible and seamless way
             </Text>
