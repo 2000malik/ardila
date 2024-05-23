@@ -16,16 +16,16 @@ const Testimonies = () => {
         <Text fontSize="16px" fontWeight={500}>
           Listen to testimonials from Ardilla users building wealth
         </Text>
-        <HStack spacing="20px">
-          <Box>
+        <HStack spacing="30px">
+          <Box transition="transform .5s" _hover={{ transform: "scale(1.1)" }}>
             <Image
               src={`/assets/images/test-2.svg`}
               alt="testimony-image"
-              width={550}
+              width={500}
               height={200}
             />
           </Box>
-          <Box>
+          <Box transition="transform .5s" _hover={{ transform: "scale(1.1)" }}>
             <Image
               src={`/assets/images/test-3.svg`}
               alt="testimony-image"
@@ -33,7 +33,7 @@ const Testimonies = () => {
               height={200}
             />
           </Box>
-          <Box>
+          <Box transition="transform .5s" _hover={{ transform: "scale(1.1)" }}>
             <Image
               src={`/assets/images/test-1.svg`}
               alt="testimony-image"
