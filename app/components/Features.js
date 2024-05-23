@@ -15,7 +15,13 @@ function FeatureCard(props) {
       pr="50px"
       pb="32px"
       pl="24px"
-      _hover={{ bg: "purple", cursor: "pointer", borderRadius: "24px" }}
+      transition="transform .5s"
+      _hover={{
+        bg: "purple",
+        cursor: "pointer",
+        borderRadius: "24px",
+        transform: "scale(1.1)",
+      }}
       {...rest}
     >
       <VStack align="start" spacing="20px">
