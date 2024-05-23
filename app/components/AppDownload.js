@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const AppDownload = () => {
   return (
-    <Box as="section" pb="150px">
+    <Box as="section">
       <Box
         h="300px"
         w="1200px"
