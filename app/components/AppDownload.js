@@ -8,7 +8,7 @@ export const AppDownload = () => {
     <Box as="section">
       <Box
         h="300px"
-        w="1200px"
+        w={{ base: "fit-content", lg: "1200px" }}
         margin="auto"
         borderRadius="25px"
         p="0"

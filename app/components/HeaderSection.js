@@ -35,7 +35,7 @@ const HeaderSection = () => {
       maxH="936px"
       bg="primary"
       color="white"
-      px="90px"
+      px={{ base:"20px",lg:"90px" }}
       pt="34px"
       overflow="hidden"
       fontFamily="Cabinet Grotesk"
@@ -114,9 +114,9 @@ const HeaderSection = () => {
         <Center>
           <Heading
             fontFamily="Cabinet Grotesk"
-            as="h2"
             fontWeight={800}
-            fontSize="95px"
+            as="h2"
+            fontSize={{ base:"2.2rem", lg: "95px" }}
             bgGradient="linear(to-l, #19FD82, #FFEB35)"
             bgClip="text"
           >

@@ -71,23 +71,38 @@ export const Features = () => {
       h="1207px"
       maxH="1407px"
       w="full"
-      px="90px"
+      px={{ base: "20px", lg: "90px" }}
       pt="122px"
       overflow="hidden"
     >
       <VStack align="stretch" spacing="30px">
         <Heading
           fontWeight={800}
-          fontSize="90px"
+          fontSize={{ base: "2.2rem", lg: "80px" }}
           fontFamily="Cabinet Grotesk"
-          textAlign="left"
+          textAlign={{ base: "center", md: "left" }}
         >
           Access More With Your Money
         </Heading>
-        <Text fontWeight={500} fontSize="16px" fontFamily="Cabinet Grotesk">
+        <Text
+          display={{ base: "none" }}
+          fontWeight={500}
+          fontSize="16px"
+          fontFamily="Cabinet Grotesk"
+        >
           Earn, learn, parlay, and grow financially. With Ardilla, you have more
           opportunities than ever at your finger tips. Why not <br /> take
           advantage today?
+        </Text>
+        <Text
+          display={{ lg: "none" }}
+          fontWeight={500}
+          fontSize="16px"
+          fontFamily="Cabinet Grotesk"
+        >
+          Earn, learn, parlay, and grow financially. With Ardilla, you have more
+          opportunities than ever at your finger tips. Why not take advantage
+          today?
         </Text>
         <Box>
           <FeatureButton _hover={{ bg: "#3d0270" }}>

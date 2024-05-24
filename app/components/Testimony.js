@@ -4,9 +4,21 @@ import React from "react";
 
 const Testimonies = () => {
   return (
-    <Box bg="gray" px="90px" pt="60px" as="section" h="852px" color="purple">
+    <Box
+      bg="gray"
+      px={{ base: "20px", lg: "90px" }}
+      pt="60px"
+      as="section"
+      h="852px"
+      color="purple"
+    >
       <VStack align="stretch" spacing="30px">
-        <Heading fontSize="80px" fontWeight={800} fontFamily="Cabinet Grotesk">
+        <Heading
+          fontSize={{ base: "2.2rem", lg: "80px" }}
+          fontFamily="Cabinet Grotesk"
+          textAlign={{ base: "center", md: "left" }}
+          fontWeight={800}
+        >
           Don’t Take Our{" "}
           <Text as="span" color="primaryRed">
             Word
