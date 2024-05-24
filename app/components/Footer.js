@@ -14,7 +14,7 @@ function FooterComingSoon(props) {
   const { children, ...rest } = props;
   return (
     <Text
-      fontSize="8px"
+      fontSize="10px"
       fontWeight={500}
       border="1px"
       borderRadius="99px"

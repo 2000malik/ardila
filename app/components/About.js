@@ -1,6 +1,9 @@
+
+import React from "react";
 import { Box, Divider, HStack } from "@chakra-ui/react";
 import Image from "next/image";
-import React from "react";
+import { AboutCarousel } from "./AboutCarousel";
+
 
 export const About = () => {
   const IMAGE_PATH = [
@@ -46,6 +49,7 @@ export const About = () => {
         </HStack>
       </Box>
       <Divider color="buttonPrimary" w="15%" border="1px" />
+      {/* <AboutCarousel/> */}
     </Box>
   );
 };
