@@ -35,7 +35,7 @@ const HeaderSection = () => {
       maxH="936px"
       bg="primary"
       color="white"
-      px={{ base:"20px",lg:"90px" }}
+      px={{ base: "20px", lg: "90px" }}
       pt="34px"
       overflow="hidden"
       fontFamily="Cabinet Grotesk"
@@ -116,7 +116,7 @@ const HeaderSection = () => {
             fontFamily="Cabinet Grotesk"
             fontWeight={800}
             as="h2"
-            fontSize={{ base:"2.2rem", lg: "95px" }}
+            fontSize={{ base: "2.2rem", lg: "95px" }}
             bgGradient="linear(to-l, #19FD82, #FFEB35)"
             bgClip="text"
           >
@@ -125,25 +125,41 @@ const HeaderSection = () => {
         </Center>
         <Center>
           <Box w="770px">
-            <Text
-              fontSize="15px"
-              fontWeight={500}
-              fontFamily="Cabinet Grotesk"
-              color="white"
-              mt={3}
-            >
-              Ardilla helps you save and invest in achieving your financial
-              goals, we have the most flexible and seamless way
-            </Text>
-            <Text
-              textAlign="center"
-              fontSize="15px"
-              fontWeight={500}
-              color="white"
-              mt={3}
-            >
-              to grow your funds.
-            </Text>
+            <Box display={{ base: "none",lg:"unset" }}>
+              <Text
+                fontSize="15px"
+                fontWeight={500}
+                fontFamily="Cabinet Grotesk"
+                color="white"
+                mt={3}
+              >
+                Ardilla helps you save and invest in achieving your financial
+                goals, we have the most flexible and seamless way
+              </Text>
+              <Text
+                textAlign="center"
+                fontSize="15px"
+                fontWeight={500}
+                color="white"
+                mt={3}
+              >
+                to grow your funds.
+              </Text>
+            </Box>
+            <Box display={{ lg: "none" }}>
+              <Text
+                fontSize="15px"
+                fontWeight={500}
+                fontFamily="Cabinet Grotesk"
+                color="white"
+                mt={3}
+                textAlign="center"
+              >
+                Ardilla helps you save and invest in achieving your financial
+                goals, we have the most flexible and seamless way to grow your
+                funds.
+              </Text>
+            </Box>
           </Box>
         </Center>
         <Center mt={5}>
