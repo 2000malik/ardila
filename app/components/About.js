@@ -1,9 +1,7 @@
-
 import React from "react";
 import { Box, Divider, HStack } from "@chakra-ui/react";
 import Image from "next/image";
 import { AboutCarousel } from "./AboutCarousel";
-
 
 export const About = () => {
   const IMAGE_PATH = [
@@ -17,7 +15,12 @@ export const About = () => {
     "8.svg",
   ];
   return (
-    <Box as="section" h="400px" px="90px" my="50px">
+    <Box
+      as="section"
+      h="400px"
+      px={{ base: "20px", lg: "90px" }}
+      my={{ base: "20px", lg: "50px" }}
+    >
       <Image
         src="/assets/images/what.svg"
         alt="phone"

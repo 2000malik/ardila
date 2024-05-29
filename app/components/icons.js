@@ -164,7 +164,7 @@ export const Twitter = ({ props }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_0_1964)">
+      <g clipPath="url(#clip0_0_1964)">
         <path
           d="M29.5 15.5001C29.5 23.5083 23.0081 30.0001 15 30.0001C6.99187 30.0001 0.5 23.5083 0.5 15.5001C0.5 7.49199 6.99187 1.00012 15 1.00012C23.0081 1.00012 29.5 7.49199 29.5 15.5001Z"
           stroke="white"
@@ -197,7 +197,7 @@ export const Facebook = ({ props }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_0_1974)">
+      <g clipPath="url(#clip0_0_1974)">
         <path
           d="M29.5 15.5001C29.5 23.5083 23.0081 30.0001 15 30.0001C6.99187 30.0001 0.5 23.5083 0.5 15.5001C0.5 7.49199 6.99187 1.00012 15 1.00012C23.0081 1.00012 29.5 7.49199 29.5 15.5001Z"
           stroke="white"
@@ -230,7 +230,7 @@ export const LinkedIn = ({ props }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_0_1969)">
+      <g clipPath="url(#clip0_0_1969)">
         <path
           d="M29.5 15.5001C29.5 23.5083 23.0081 30.0001 15 30.0001C6.99187 30.0001 0.5 23.5083 0.5 15.5001C0.5 7.49199 6.99187 1.00012 15 1.00012C23.0081 1.00012 29.5 7.49199 29.5 15.5001Z"
           stroke="white"

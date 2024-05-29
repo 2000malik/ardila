@@ -47,19 +47,26 @@ export const Footer = () => {
     <Box
       as="footer"
       bg="buttonPrimary"
-      h="725px"
+      // h="725px"
       mt="-150px"
       pt="200px"
-      px="90px"
+      px={{ base: "20px", lg: "90px" }}
       color="white"
       overflow="hidden"
+      pb={"30px"}
     >
       <VStack align="stretch" spacing={1}>
-        <HStack spacing="150px">
-          {/* w={{ base: "full", md: "unset" }} */}
-          {/* direction={{ base: "column" }} */}
-
-          <VStack align="flex-start" h="400px" spacing={5}>
+        <HStack
+          spacing={{ base: "50px", lg: "150px" }}
+          flexDirection={{ base: "column", md: "row" }}
+          align="flex-start"
+          wrap={{ base: "unset", md: "wrap", lg: "unset" }}
+        >
+          <VStack
+            align="flex-start"
+            h={{ base: "unset", lg: "400px" }}
+            spacing={5}
+          >
             <FooterTitle>Products</FooterTitle>
             <FooterNavLink path="#">Savings</FooterNavLink>
             <FooterNavLink path="#">Dilla</FooterNavLink>
@@ -76,7 +83,11 @@ export const Footer = () => {
             </FooterNavLink>
           </VStack>
 
-          <VStack align="flex-start" h="400px" spacing={5}>
+          <VStack
+            align="flex-start"
+            h={{ base: "unset", lg: "400px" }}
+            spacing={5}
+          >
             <FooterTitle>Company</FooterTitle>
             <FooterNavLink path="#">About us</FooterNavLink>
             <FooterNavLink path="#">Careers</FooterNavLink>
@@ -84,7 +95,11 @@ export const Footer = () => {
             <FooterNavLink path="#">Press</FooterNavLink>
           </VStack>
 
-          <VStack align="flex-start" h="400px" spacing={5}>
+          <VStack
+            align="flex-start"
+            h={{ base: "unset", lg: "400px" }}
+            spacing={5}
+          >
             <FooterTitle>Transparency</FooterTitle>
             <FooterNavLink path="#">Terms & conditions</FooterNavLink>
             <FooterNavLink path="#">Information security policy</FooterNavLink>
@@ -92,7 +107,11 @@ export const Footer = () => {
             <FooterNavLink path="#">Interest Tool</FooterNavLink>
           </VStack>
 
-          <VStack align="flex-start" h="400px" spacing={5}>
+          <VStack
+            align="flex-start"
+            h={{ base: "unset", lg: "400px" }}
+            spacing={5}
+          >
             <FooterTitle>Developer</FooterTitle>
             <FooterNavLink path="#" isComing={true}>
               Connect Api
@@ -103,7 +122,7 @@ export const Footer = () => {
             align="flex-start"
             fontSize="14px"
             fontWeight={400}
-            h="400px"
+            h={{ base: "unset", lg: "400px" }}
             spacing={5}
           >
             <FooterTitle>Address</FooterTitle>
