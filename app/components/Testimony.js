@@ -9,7 +9,7 @@ const Testimonies = () => {
       px={{ base: "20px", lg: "90px" }}
       pt="60px"
       as="section"
-      h="852px"
+      h={{ base: "fit-content", lg: "852px" }}
       color="purple"
     >
       <VStack align="stretch" spacing="30px">
@@ -28,7 +28,11 @@ const Testimonies = () => {
         <Text fontSize="16px" fontWeight={500}>
           Listen to testimonials from Ardilla users building wealth
         </Text>
-        <HStack spacing="30px">
+        <HStack
+          spacing="30px"
+          flexDirection={{ base: "column", md: "initial" }}
+          mb={{ base: 5, lg: "unset" }}
+        >
           <Box transition="transform .5s" _hover={{ transform: "scale(1.1)" }}>
             <Image
               src={`/assets/images/test-2.svg`}
