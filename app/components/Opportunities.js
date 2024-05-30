@@ -30,7 +30,7 @@ export const Opportunities = () => {
           </Text>
         </Heading>
         <Text
-          display={{ base: "none" }}
+          display={{ base: "none", lg: "unset" }}
           fontSize="24px"
           fontWeight={500}
           color="darkPurple"
