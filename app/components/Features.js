@@ -8,7 +8,7 @@ function FeatureCard(props) {
   const { title, icon, children, ...rest } = props;
   return (
     <Box
-      w="40%"
+      w={{ base: "unset", lg: "40%" }}
       minH="300px"
       maxH="400px"
       pt="32px"
@@ -68,8 +68,8 @@ export const Features = () => {
       bgSize="cover"
       bgPosition="center"
       position="relative"
-      h="1207px"
-      maxH="1407px"
+      h={{base:"fit-content", lg:"1207px" }}
+      // maxH="1407px"
       w="full"
       px={{ base: "20px", lg: "90px" }}
       pt="122px"
@@ -114,17 +114,23 @@ export const Features = () => {
         </Box>
       </VStack>
       <Box
-        h="1001px"
+        h={{ base: "unset", lg: "1001px" }}
         bg="#29014B"
         boxShadow="0 30px 90px 0 rgba(136, 7, 247, 0.5), 0 15px 70px 0 rgba(251, 64, 64, 0.25)"
         borderRadius="md"
         fontSize="xl"
         fontWeight="bold"
         mt="50px"
-        px="170px"
+        px={{ base: "unset", lg: "170px" }}
         pt="50px"
+        overflowX="scroll"
+        scrollBehavior="smooth"
       >
-        <HStack spacing="200px">
+        <HStack
+          spacing={{ base: "2opx", lg: "200px" }}
+          flexDirection={{ base: "column", md: "initial" }}
+          flexWrap="wrap"
+        >
           <FeatureCard title="DIB" icon={<Dib />}>
             <Text color="white" fontSize="16px" fontWeight={400}>
               Nothing beats an emergency quite like an emergency fund. With
@@ -138,7 +144,11 @@ export const Features = () => {
             </Text>
           </FeatureCard>
         </HStack>
-        <HStack spacing="200px">
+        <HStack
+          spacing={{ base: "2opx", lg: "200px" }}
+          flexDirection={{ base: "column", md: "initial" }}
+          flexWrap="wrap"
+        >
           <FeatureCard title="Vault" icon={<Vault />}>
             <Text color="white" fontSize="16px" fontWeight={400}>
               Lock away excess funds you don't know what to do with. We can help
