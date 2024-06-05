@@ -68,7 +68,7 @@ export const Features = () => {
       bgSize="cover"
       bgPosition="center"
       position="relative"
-      h={{base:"fit-content", lg:"1207px" }}
+      h={{ base: "fit-content", lg: "1207px" }}
       // maxH="1407px"
       w="full"
       px={{ base: "20px", lg: "90px" }}
@@ -85,7 +85,7 @@ export const Features = () => {
           Access More With Your Money
         </Heading>
         <Text
-          display={{ base: "none" }}
+          display={{ base: "none", md: "unset" }}
           fontWeight={500}
           fontSize="16px"
           fontFamily="Cabinet Grotesk"
@@ -129,7 +129,7 @@ export const Features = () => {
         <HStack
           spacing={{ base: "2opx", lg: "200px" }}
           flexDirection={{ base: "column", md: "initial" }}
-          flexWrap="wrap"
+          flexWrap={{ base: "wrap", lg: "unset" }}
         >
           <FeatureCard title="DIB" icon={<Dib />}>
             <Text color="white" fontSize="16px" fontWeight={400}>
@@ -147,7 +147,7 @@ export const Features = () => {
         <HStack
           spacing={{ base: "2opx", lg: "200px" }}
           flexDirection={{ base: "column", md: "initial" }}
-          flexWrap="wrap"
+          flexWrap={{ base: "wrap", lg: "unset" }}
         >
           <FeatureCard title="Vault" icon={<Vault />}>
             <Text color="white" fontSize="16px" fontWeight={400}>

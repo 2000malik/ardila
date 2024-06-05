@@ -52,7 +52,7 @@ const HeaderSection = () => {
           height="80px"
           mr={5}
         >
-          <HStack spacing="100px">
+          <HStack spacing="100px" flexDirection={{  }}>
             <Box mr="45px">
               <Link href="/">
                 <Image
