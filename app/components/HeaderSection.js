@@ -55,7 +55,7 @@ const HeaderSection = () => {
           borderRadius="1000px"
           px="30px"
           py="8px"
-          height="80px"
+          height={{ lg:"80px" }}
           mr={{ lg: 5 }}
         >
           <HStack
