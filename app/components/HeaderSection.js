@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Button,
@@ -6,11 +7,14 @@ import {
   HStack,
   Heading,
   Text,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "./NavLink";
 import Link from "next/link";
+import { Hamburger } from "./icons";
+import NavBarDrawer from "./NavBarDrawer";
 
 export function AdrilaButton(props) {
   const { children, ...rest } = props;
@@ -29,6 +33,8 @@ export function AdrilaButton(props) {
 }
 
 const HeaderSection = () => {
+  // const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
       as="section"
@@ -40,9 +46,9 @@ const HeaderSection = () => {
       overflow="hidden"
       fontFamily="Cabinet Grotesk"
     >
-      <Flex as="nav" w="1264px" margin="auto">
+      <Flex as="nav" w={{ lg: "1264px" }} margin="auto">
         <Box
-          // w={"80%"}
+          w={{ base: "full", lg: "unset" }}
           bg="lightPrimary"
           border="1px"
           borderColor="#ffffff38"
@@ -50,10 +56,14 @@ const HeaderSection = () => {
           px="30px"
           py="8px"
           height="80px"
-          mr={5}
+          mr={{ lg: 5 }}
         >
-          <HStack spacing="100px" flexDirection={{  }}>
-            <Box mr="45px">
+          <HStack
+            spacing={{ lg: "100px" }}
+            justifyContent={{ base: "space-between", lg: "unset" }}
+            alignItems="center"
+          >
+            <Box mr={{ lg: "45px" }}>
               <Link href="/">
                 <Image
                   src="/assets/images/LOGO.svg"
@@ -63,7 +73,22 @@ const HeaderSection = () => {
                 />
               </Link>
             </Box>
-            <HStack spacing="40px">
+            {/* Mobile menu start */}
+            <Button
+              bg="unset"
+              variant="unstyled"
+              display={{ base: "unset", lg: "none" }}
+              onClick={onOpen}
+              justifySelf="flex-end"
+            >
+              <Hamburger />
+            </Button>
+            <NavBarDrawer
+              isOpen={isOpen}
+              onClose={onClose}
+              
+            />
+            <HStack spacing="40px" display={{ base: "none", lg: "flex" }}>
               <Link href="#">
                 <NavLink>Product</NavLink>
               </Link>
@@ -77,7 +102,7 @@ const HeaderSection = () => {
                 <NavLink>Learn</NavLink>
               </Link>
             </HStack>
-            <HStack>
+            <HStack display={{ base: "none", lg: "flex" }}>
               <Image
                 src="/assets/images/MAP.svg"
                 alt="location"
@@ -106,6 +131,7 @@ const HeaderSection = () => {
           bg="lightPrimary"
           w="10%"
           height="80px"
+          display={{ base: "none", lg: "initial" }}
         >
           <NavLink>Personal</NavLink>
         </AdrilaButton>
@@ -125,7 +151,7 @@ const HeaderSection = () => {
         </Center>
         <Center>
           <Box w="770px">
-            <Box display={{ base: "none",lg:"unset" }}>
+            <Box display={{ base: "none", lg: "unset" }}>
               <Text
                 fontSize="15px"
                 fontWeight={500}
