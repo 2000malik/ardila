@@ -41,7 +41,7 @@ export const Opportunities = () => {
         </Text>
         <Text
           display={{ lg: "none" }}
-          fontSize="24px"
+          fontSize="16px"
           fontWeight={500}
           color="darkPurple"
         >
