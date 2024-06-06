@@ -275,7 +275,7 @@ export const Instagram = ({ props }) => {
 export const Hamburger = ({ props }) => {
   return (
     <Icon
-      width="50px"
+      width="30px"
       height="50px"
       viewBox="0 0 24 24"
       fill="none"
